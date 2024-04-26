@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Web effect</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.983));
+        }
+    </style>
+</head>
+<body>
+    <div class="h-screen w-full bg-black font-['helvetica_now_display']">
+       <div class="imagecontainer h-screen w-full relative overflow-hidden">
+         <div class="maincontainer absolute z-[3] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2     h-screen w-full">
+            <img class="w-full h-full object-cover" src="" alt="">
+         </div>
+         <div class="secondmain absolute z-[2] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-screen w-full">
+            <img class="w-full h-full object-cover" src="" alt="">
+         </div>
+       </div>
+       <div class="absolute top-0 left-0 z-[4] w-full h-screen  flex flex-col justify-between">
+        <div class="navbar py-6 px-5 flex justify-between items-center text-white ">
+            <div class="prflimg w-[3.5rem] h-[3.5rem] rounded-full bg-red-600 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <h1 class=" text-2xl font-medium  tracking-tighter">They liked you</h1>
+            <div class="chaticon relative w-[3.5rem] h-[3.5rem] rounded-full flex justify-center items-center bg-white/20">
+                <i class="opacity-80 ri-chat-3-fill"></i>
+                <div class="badge w-5 h-5 flex absolute rounded-full bg-red-500 items-center justify-center top-0 right-0 translate-x-[5px] -translate-y-[5px]">
+                    <h5 class="font-medium">5</h5>
+                </div> 
+            </div>
+        </div> 
+        <div class="detailscontainer w-full">
+            <div class="details py-6 px-5 w-full">
+                <div class="element location flex gap-4 items-center">
+                    <i class="w-[2rem] h-[2rem] bg-white rounded-full flex items-center font-semibold justify-center ri-corner-left-up-line"></i>
+                    <h3 class="text-white">USA,California</h3>
+                </div>
+                <div class="element name flex gap-4 text-white mt-2">
+                    <h1 class="font-semibold text-6xl">Victoria</h1>
+                    <h1 class="text-semibold text-6xl opacity-60">20</h1>
+                </div>
+                <div class="element tags flex gap-3 text-white mt-4">
+                    
+                    
+                </div>
+                <div class="element bio text-white/80 mt-5">
+                    <h3 class="text-xl">Bio</h3>
+                    <p class="text-lg mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore consequatur id aut porro error laborum. Voluptas veniam ratione officia illum, culpa ex minus obcaecati vero quibusdam voluptates mollitia magnam quaerat? </p>
+                </div>
+                <div class="element flex items-start mt-10 gap-1 ">
+                    <button class=" deny py-3 rounded-xl w-1/2  bg-white">
+                        <i class=" text-2xl ri-close-line"></i>
+                    </button>
+                    <button class=" accept py-3 rounded-xl w-1/2 bg-red-600">
+                        <i class="text-2xl text-white ri-heart-2-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+       </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script src="index.js"></script>
+</body>
+</html>
